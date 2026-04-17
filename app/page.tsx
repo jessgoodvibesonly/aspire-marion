@@ -630,3 +630,5 @@ export default function AspireMarionMiniPage() {
     </main>
   );
 }
+ಲ it is
+another error. check the image
