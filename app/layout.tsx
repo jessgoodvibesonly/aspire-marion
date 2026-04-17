@@ -1,16 +1,18 @@
+import type { ReactNode } from "react";
+
 export const metadata = {
   title: "Aspire PODS | Marion",
-  description: "Aspire PODS overview for Marion"
-}
+  description: "Aspire PODS overview for Marion",
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: ReactNode;
 }) {
   return (
     <html lang="en">
       <body style={{ margin: 0 }}>{children}</body>
     </html>
-  )
+  );
 }
