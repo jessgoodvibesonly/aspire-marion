@@ -3,6 +3,9 @@ import type { ReactNode } from "react";
 export const metadata = {
   title: "Aspire PODS | Marion",
   description: "Aspire PODS overview for Marion",
+  icons: {
+    icon: "/aspireicon.png",
+  },
 };
 
 export default function RootLayout({
