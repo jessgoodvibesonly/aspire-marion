@@ -4,7 +4,7 @@ export const metadata = {
   title: "Aspire PODS | Marion",
   description: "Aspire PODS overview for Marion",
   icons: {
-    icon: "/aspireicon.png",
+    icon: "/aspire-pods-logo.png",
   },
 };
 
@@ -15,7 +15,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body style={{ margin: 0 }}>{children}</body>
+      <body style={{ margin: 0, background: "#000000" }}>
+        {children}
+      </body>
     </html>
   );
 }
