@@ -106,7 +106,6 @@ export default function AspireMarionMiniPage() {
         fontFamily: "Arial, Helvetica, sans-serif",
       }}
     >
-      {/* HERO */}
       <section
         style={{
           position: "relative",
@@ -201,7 +200,7 @@ export default function AspireMarionMiniPage() {
                   margin: 0,
                 }}
               >
-                Built for Mario • Scopely Spain
+                Built for Marion • Scopely
               </p>
 
               <h1
@@ -216,7 +215,7 @@ export default function AspireMarionMiniPage() {
                   textShadow: "0 0 24px rgba(255,255,255,0.12)",
                 }}
               >
-                Aspire PODS as a North America partner for Scopely
+                Aspire PODS as Scopely’s North America operational partner
               </h1>
 
               <p
@@ -242,9 +241,9 @@ export default function AspireMarionMiniPage() {
                   color: "rgba(255,255,255,0.9)",
                 }}
               >
-                The goal is simple: position Aspire as Scopely’s operational partner
-                across North America with stable, structured support that aligns with
-                global quality standards.
+                The goal is to position Aspire as a long term North America partner
+                for Scopely with stable, structured support that aligns with quality,
+                speed, communication, and operational consistency.
               </p>
 
               <div
@@ -288,7 +287,7 @@ export default function AspireMarionMiniPage() {
                 {[
                   {
                     title: "Who this is for",
-                    text: "Mario, Head of QA for Scopely Spain, exploring a stronger North America operational partner model.",
+                    text: "Marion, Head of QA at Scopely, exploring a stronger North America operational partner model.",
                     bg: "#ff63b9",
                   },
                   {
@@ -298,7 +297,7 @@ export default function AspireMarionMiniPage() {
                   },
                   {
                     title: "What we want",
-                    text: "Aspire PODS positioned as Scopely’s operational partner across North America.",
+                    text: "Aspire PODS positioned as Scopely’s North America operational partner.",
                     bg: "#7c4dff",
                   },
                 ].map((item) => (
@@ -340,7 +339,6 @@ export default function AspireMarionMiniPage() {
         </div>
       </section>
 
-      {/* WHAT THIS COULD LOOK LIKE */}
       <section style={{ background: "#1ff5ff", color: "#000000" }}>
         <div style={sectionWrap}>
           <div style={{ maxWidth: "920px", marginBottom: "30px" }}>
@@ -361,7 +359,7 @@ export default function AspireMarionMiniPage() {
             >
               Aspire can operate as a flexible extension of Scopely’s existing quality
               and operational infrastructure, supporting North America coverage while
-              staying aligned with global leadership and studio standards.
+              staying aligned with global leadership, production priorities, and quality standards.
             </p>
           </div>
 
@@ -380,7 +378,7 @@ export default function AspireMarionMiniPage() {
               },
               {
                 title: "QA + operational alignment",
-                body: "Support structure designed to align directly with quality leadership and delivery expectations.",
+                body: "Support structure designed to align directly with quality leadership, delivery expectations, and long term operational consistency.",
                 bg: "#54efff",
               },
               {
@@ -426,7 +424,6 @@ export default function AspireMarionMiniPage() {
         </div>
       </section>
 
-      {/* POD FUNCTIONS */}
       <section style={{ background: "#7c4dff", color: "#ffffff" }}>
         <div style={sectionWrap}>
           <div style={{ maxWidth: "900px", marginBottom: "30px" }}>
@@ -466,7 +463,6 @@ export default function AspireMarionMiniPage() {
         </div>
       </section>
 
-      {/* WHY ASPIRE */}
       <section style={{ background: "#ff8a3d", color: "#000000" }}>
         <div style={sectionWrap}>
           <div style={{ maxWidth: "920px", marginBottom: "30px" }}>
@@ -508,7 +504,6 @@ export default function AspireMarionMiniPage() {
         </div>
       </section>
 
-      {/* PRICING */}
       <section id="pricing" style={{ background: "#ffe44d", color: "#000000" }}>
         <div style={sectionWrap}>
           <div style={{ maxWidth: "920px", marginBottom: "30px" }}>
@@ -585,7 +580,6 @@ export default function AspireMarionMiniPage() {
         </div>
       </section>
 
-      {/* FINAL SECTION */}
       <section style={{ background: "#000000", color: "#ffffff" }}>
         <div style={sectionWrap}>
           <div
@@ -633,7 +627,7 @@ export default function AspireMarionMiniPage() {
                   lineHeight: 1.05,
                 }}
               >
-                Happy to discuss what this could look like for Scopely
+                Happy to discuss what this could look like for your team
               </h3>
               <p
                 style={{
