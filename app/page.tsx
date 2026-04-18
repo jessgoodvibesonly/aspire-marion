@@ -1,6 +1,6 @@
 export default function AspireMarionMiniPage() {
   const podFunctions = [
-    "QA support",
+    "Embedded QA support",
     "Live Ops support",
     "Production coordination",
     "Player support and community",
@@ -15,6 +15,63 @@ export default function AspireMarionMiniPage() {
     "North America coverage with strong alignment",
     "Partner model, not traditional outsourcing",
     "Structured for speed, quality, and stability",
+  ];
+
+  const scopelyFit = [
+    {
+      title: "Deep integration with development",
+      points: [
+        "Works inside the dev cycle, not after feature completion",
+        "Supports shift-left testing during development",
+        "Can embed QA engineers into feature teams and pods",
+      ],
+      bg: "#7af9ff",
+    },
+    {
+      title: "Technical QA capabilities",
+      points: [
+        "Supports automation across UI, API, and backend testing",
+        "Can align with CI/CD workflows including Jenkins and GitHub Actions",
+        "Comfortable with scripting, game engine workflows, and understanding production code",
+      ],
+      bg: "#54efff",
+    },
+    {
+      title: "Live Ops and production mindset",
+      points: [
+        "Experience validating A/B testing, feature flags, events, and live configs",
+        "Supports economies, data validation, and scale edge cases",
+        "Built around player behavior awareness and live service reality",
+      ],
+      bg: "#2be6ff",
+    },
+    {
+      title: "Gaming-specific domain relevance",
+      points: [
+        "Supports F2P systems including economy, progression, and monetization",
+        "Can align around genre-specific quality needs",
+        "Familiar with mobile platform expectations including iOS and Android",
+      ],
+      bg: "#9bf6ff",
+    },
+    {
+      title: "Collaboration and communication",
+      points: [
+        "Strong English communication across written and spoken workflows",
+        "Comfortable inside Agile ceremonies including standups, planning, and retros",
+        "Senior profiles who can own outcomes, flag risk, and contribute directly",
+      ],
+      bg: "#74f2ff",
+    },
+    {
+      title: "Open market flexibility",
+      points: [
+        "Comfortable with game teams interviewing DevQA candidates",
+        "Clear SLA expectations for sourcing and delivery",
+        "Operates well within a competitive open market model",
+      ],
+      bg: "#4deaff",
+    },
   ];
 
   const pricing = [
@@ -36,9 +93,9 @@ export default function AspireMarionMiniPage() {
   ];
 
   const sectionWrap = {
-    maxWidth: "1120px",
+    maxWidth: "1180px",
     margin: "0 auto",
-    padding: "72px 24px",
+    padding: "76px 24px",
   } as const;
 
   const sectionTitle = {
@@ -50,7 +107,7 @@ export default function AspireMarionMiniPage() {
   };
 
   const sectionHeading = {
-    fontSize: "44px",
+    fontSize: "46px",
     fontWeight: 900,
     textTransform: "uppercase" as const,
     letterSpacing: "-0.03em",
@@ -106,11 +163,13 @@ export default function AspireMarionMiniPage() {
         fontFamily: "Arial, Helvetica, sans-serif",
       }}
     >
+      {/* HERO */}
       <section
         style={{
           position: "relative",
           overflow: "hidden",
-          background: "#ff3ea5",
+          background:
+            "linear-gradient(90deg, #06111b 0%, #0d1b2d 30%, #111a2c 55%, #101625 100%)",
           color: "#ffffff",
         }}
       >
@@ -118,77 +177,52 @@ export default function AspireMarionMiniPage() {
           style={{
             position: "absolute",
             inset: 0,
-            opacity: 0.2,
-            backgroundImage:
-              "linear-gradient(to right, rgba(255,255,255,0.35) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.28) 1px, transparent 1px)",
-            backgroundSize: "56px 56px",
-          }}
-        />
-        <div
-          style={{
-            position: "absolute",
-            inset: 0,
             background:
-              "radial-gradient(circle at top right, rgba(255,214,87,0.42), transparent 26%), radial-gradient(circle at bottom left, rgba(0,255,255,0.18), transparent 32%)",
+              "radial-gradient(circle at left center, rgba(154,102,255,0.35), transparent 28%), radial-gradient(circle at top right, rgba(31,245,255,0.15), transparent 26%)",
           }}
         />
-
         <div style={{ ...sectionWrap, position: "relative" }}>
           <div
             style={{
-              display: "flex",
-              flexWrap: "wrap",
+              display: "grid",
+              gap: "42px",
+              gridTemplateColumns: "minmax(340px, 400px) minmax(0, 1fr)",
               alignItems: "center",
-              gap: "16px",
-              marginBottom: "30px",
             }}
           >
             <div
               style={{
                 display: "flex",
-                height: "82px",
-                width: "82px",
-                alignItems: "center",
                 justifyContent: "center",
-                borderRadius: "24px",
-                border: "2px solid rgba(255,255,255,0.28)",
-                background: "rgba(0,0,0,0.22)",
-                boxShadow: "0 0 40px rgba(255,255,255,0.14)",
-                backdropFilter: "blur(8px)",
               }}
             >
-              <img
-                src="/aspire-pods-logo.png"
-                alt="Aspire PODS logo"
-                style={{ height: "58px", width: "58px", objectFit: "contain" }}
-              />
+              <div
+                style={{
+                  width: "320px",
+                  minHeight: "320px",
+                  borderRadius: "2px",
+                  background: "#000000",
+                  boxShadow:
+                    "0 0 60px rgba(154,102,255,0.55), 0 0 120px rgba(31,245,255,0.12)",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  padding: "30px",
+                }}
+              >
+                <img
+                  src="/aspire-pods-logo.png"
+                  alt="Aspire PODS logo"
+                  style={{
+                    width: "100%",
+                    maxWidth: "260px",
+                    objectFit: "contain",
+                    display: "block",
+                  }}
+                />
+              </div>
             </div>
 
-            <div
-              style={{
-                borderRadius: "999px",
-                border: "2px solid rgba(255,255,255,0.25)",
-                background: "rgba(0,0,0,0.2)",
-                padding: "10px 18px",
-                fontSize: "13px",
-                fontWeight: 900,
-                textTransform: "uppercase",
-                letterSpacing: "0.22em",
-                boxShadow: "0 0 24px rgba(255,255,255,0.1)",
-                backdropFilter: "blur(8px)",
-              }}
-            >
-              Aspire PODS • Where people matter
-            </div>
-          </div>
-
-          <div
-            style={{
-              display: "grid",
-              gap: "38px",
-              gridTemplateColumns: "minmax(0, 1.2fr) minmax(320px, 0.8fr)",
-            }}
-          >
             <div>
               <p
                 style={{
@@ -196,23 +230,22 @@ export default function AspireMarionMiniPage() {
                   fontWeight: 900,
                   textTransform: "uppercase",
                   letterSpacing: "0.36em",
-                  color: "#fff3a2",
+                  color: "#69e8ff",
                   margin: 0,
                 }}
               >
-                Built for Marion • Scopely
+                Aspire Agency Global Inc.
               </p>
 
               <h1
                 style={{
                   margin: "16px 0 22px",
                   maxWidth: "930px",
-                  fontSize: "66px",
+                  fontSize: "64px",
                   fontWeight: 900,
                   textTransform: "uppercase",
                   lineHeight: 0.95,
                   letterSpacing: "-0.035em",
-                  textShadow: "0 0 24px rgba(255,255,255,0.12)",
                 }}
               >
                 Aspire PODS as Scopely’s North America operational partner
@@ -227,23 +260,24 @@ export default function AspireMarionMiniPage() {
                   color: "rgba(255,255,255,0.95)",
                 }}
               >
-                Aspire builds embedded PODS that plug directly into studio workflows
-                across QA, Live Ops, production support, and player-facing operations.
+                Built for Marion at Scopely, this overview outlines how Aspire PODS
+                can support a stronger North America QA and operational model through
+                embedded teams that work inside real studio workflows.
               </p>
 
               <p
                 style={{
                   margin: 0,
-                  maxWidth: "790px",
+                  maxWidth: "800px",
                   fontSize: "18px",
                   fontWeight: 600,
                   lineHeight: 1.7,
-                  color: "rgba(255,255,255,0.9)",
+                  color: "rgba(255,255,255,0.88)",
                 }}
               >
-                The goal is to position Aspire as a long term North America partner
-                for Scopely with stable, structured support that aligns with quality,
-                speed, communication, and operational consistency.
+                Aspire is positioned to support QA, Live Ops, production coordination,
+                and player-facing operations with structured pods that align with
+                development, speed, quality, communication, and long term execution.
               </p>
 
               <div
@@ -268,77 +302,86 @@ export default function AspireMarionMiniPage() {
                 </a>
               </div>
             </div>
-
-            <div style={{ ...darkCard, padding: "24px" }}>
-              <p
-                style={{
-                  fontSize: "14px",
-                  fontWeight: 900,
-                  textTransform: "uppercase",
-                  letterSpacing: "0.28em",
-                  color: "#fff3a2",
-                  margin: 0,
-                }}
-              >
-                At a glance
-              </p>
-
-              <div style={{ marginTop: "20px", display: "grid", gap: "16px" }}>
-                {[
-                  {
-                    title: "Who this is for",
-                    text: "Marion, Head of QA at Scopely, exploring a stronger North America operational partner model.",
-                    bg: "#ff63b9",
-                  },
-                  {
-                    title: "What Aspire is",
-                    text: "Embedded POD infrastructure, not traditional outsourcing and not a staffing-only approach.",
-                    bg: "#ff8a3d",
-                  },
-                  {
-                    title: "What we want",
-                    text: "Aspire PODS positioned as Scopely’s North America operational partner.",
-                    bg: "#7c4dff",
-                  },
-                ].map((item) => (
-                  <div
-                    key={item.title}
-                    style={{
-                      borderRadius: "18px",
-                      border: "1px solid rgba(255,255,255,0.18)",
-                      background: item.bg,
-                      padding: "16px",
-                      boxShadow: "0 0 25px rgba(255,255,255,0.08)",
-                    }}
-                  >
-                    <p
-                      style={{
-                        margin: 0,
-                        fontWeight: 900,
-                        textTransform: "uppercase",
-                        letterSpacing: "0.12em",
-                        color: "#ffffff",
-                      }}
-                    >
-                      {item.title}
-                    </p>
-                    <p
-                      style={{
-                        margin: "8px 0 0",
-                        lineHeight: 1.6,
-                        color: "rgba(255,255,255,0.96)",
-                      }}
-                    >
-                      {item.text}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </div>
           </div>
         </div>
       </section>
 
+      {/* AT A GLANCE */}
+      <section style={{ background: "#ff3ea5", color: "#ffffff" }}>
+        <div style={sectionWrap}>
+          <div style={{ maxWidth: "920px", marginBottom: "30px" }}>
+            <p style={{ ...sectionTitle, color: "#fff3a2" }}>At a glance</p>
+            <h2 style={sectionHeading}>
+              The structure, the fit, and the partner model
+            </h2>
+          </div>
+
+          <div
+            style={{
+              display: "grid",
+              gap: "18px",
+              gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
+            }}
+          >
+            {[
+              {
+                title: "Who this is for",
+                text: "Marion, Head of QA at Scopely, exploring a stronger North America operational partner model.",
+                bg: "#ff63b9",
+              },
+              {
+                title: "What Aspire is",
+                text: "Embedded POD infrastructure, not traditional outsourcing and not a staffing-only approach.",
+                bg: "#ff8a3d",
+              },
+              {
+                title: "What we want",
+                text: "Aspire PODS positioned as Scopely’s North America operational partner.",
+                bg: "#7c4dff",
+              },
+              {
+                title: "How we fit",
+                text: "Inside the workflow, aligned to development, quality, Live Ops, and execution realities.",
+                bg: "#a353ff",
+              },
+            ].map((item) => (
+              <div
+                key={item.title}
+                style={{
+                  borderRadius: "20px",
+                  border: "1px solid rgba(255,255,255,0.18)",
+                  background: item.bg,
+                  padding: "18px",
+                  boxShadow: "0 0 25px rgba(255,255,255,0.08)",
+                }}
+              >
+                <p
+                  style={{
+                    margin: 0,
+                    fontWeight: 900,
+                    textTransform: "uppercase",
+                    letterSpacing: "0.12em",
+                    color: "#ffffff",
+                  }}
+                >
+                  {item.title}
+                </p>
+                <p
+                  style={{
+                    margin: "8px 0 0",
+                    lineHeight: 1.62,
+                    color: "rgba(255,255,255,0.96)",
+                  }}
+                >
+                  {item.text}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* WHAT THIS COULD LOOK LIKE */}
       <section style={{ background: "#1ff5ff", color: "#000000" }}>
         <div style={sectionWrap}>
           <div style={{ maxWidth: "920px", marginBottom: "30px" }}>
@@ -351,15 +394,15 @@ export default function AspireMarionMiniPage() {
             <p
               style={{
                 margin: 0,
-                maxWidth: "800px",
+                maxWidth: "820px",
                 fontSize: "20px",
                 lineHeight: 1.8,
                 color: "rgba(0,0,0,0.82)",
               }}
             >
-              Aspire can operate as a flexible extension of Scopely’s existing quality
-              and operational infrastructure, supporting North America coverage while
-              staying aligned with global leadership, production priorities, and quality standards.
+              Aspire can operate as a flexible extension of Scopely’s quality and
+              operational infrastructure, supporting North America coverage while
+              staying aligned with leadership, production priorities, and quality standards.
             </p>
           </div>
 
@@ -377,7 +420,7 @@ export default function AspireMarionMiniPage() {
                 bg: "#7af9ff",
               },
               {
-                title: "QA + operational alignment",
+                title: "QA plus operational alignment",
                 body: "Support structure designed to align directly with quality leadership, delivery expectations, and long term operational consistency.",
                 bg: "#54efff",
               },
@@ -424,10 +467,79 @@ export default function AspireMarionMiniPage() {
         </div>
       </section>
 
+      {/* SCOPELY RELEVANCE */}
       <section style={{ background: "#7c4dff", color: "#ffffff" }}>
         <div style={sectionWrap}>
+          <div style={{ maxWidth: "960px", marginBottom: "30px" }}>
+            <p style={{ ...sectionTitle, color: "#ffe44d" }}>Relevant to Scopely</p>
+            <h2 style={sectionHeading}>
+              Built around the quality model modern game teams are asking for
+            </h2>
+            <p
+              style={{
+                margin: 0,
+                maxWidth: "820px",
+                fontSize: "20px",
+                lineHeight: 1.8,
+                color: "rgba(255,255,255,0.86)",
+              }}
+            >
+              This model aligns with the type of embedded DevQA partner structure
+              Scopely teams look for: integrated, technical, live service aware,
+              collaborative, and flexible inside an open market model.
+            </p>
+          </div>
+
+          <div
+            style={{
+              display: "grid",
+              gap: "20px",
+              gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+            }}
+          >
+            {scopelyFit.map((item) => (
+              <div
+                key={item.title}
+                style={{
+                  borderRadius: "24px",
+                  border: "2px solid rgba(255,255,255,0.16)",
+                  background: item.bg,
+                  color: "#000000",
+                  padding: "22px",
+                  boxShadow: "0 0 24px rgba(255,255,255,0.08)",
+                }}
+              >
+                <h3
+                  style={{
+                    margin: 0,
+                    fontSize: "20px",
+                    fontWeight: 900,
+                    textTransform: "uppercase",
+                    letterSpacing: "0.06em",
+                    lineHeight: 1.2,
+                  }}
+                >
+                  {item.title}
+                </h3>
+
+                <ul style={{ margin: "14px 0 0", paddingLeft: "20px", lineHeight: 1.8 }}>
+                  {item.points.map((point) => (
+                    <li key={point} style={{ marginBottom: "4px" }}>
+                      {point}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* POD FUNCTIONS */}
+      <section style={{ background: "#ff8a3d", color: "#000000" }}>
+        <div style={sectionWrap}>
           <div style={{ maxWidth: "900px", marginBottom: "30px" }}>
-            <p style={{ ...sectionTitle, color: "#ffe44d" }}>Core functions</p>
+            <p style={{ ...sectionTitle, color: "#5a1b00" }}>Core functions</p>
             <h2 style={sectionHeading}>
               Designed around what modern game teams actually need
             </h2>
@@ -445,15 +557,15 @@ export default function AspireMarionMiniPage() {
                 key={item}
                 style={{
                   borderRadius: "18px",
-                  border: "2px solid rgba(255,255,255,0.2)",
+                  border: "2px solid rgba(0,0,0,0.12)",
                   padding: "20px",
                   fontSize: "16px",
                   fontWeight: 900,
                   textTransform: "uppercase",
                   letterSpacing: "0.08em",
-                  boxShadow: "0 0 24px rgba(255,255,255,0.08)",
+                  boxShadow: "0 0 24px rgba(0,0,0,0.08)",
                   background:
-                    index % 3 === 0 ? "#936bff" : index % 3 === 1 ? "#865cff" : "#a07dff",
+                    index % 3 === 0 ? "#ff9f5f" : index % 3 === 1 ? "#ffb178" : "#ffc18d",
                 }}
               >
                 {item}
@@ -463,12 +575,11 @@ export default function AspireMarionMiniPage() {
         </div>
       </section>
 
-      <section style={{ background: "#ff8a3d", color: "#000000" }}>
+      {/* WHY ASPIRE */}
+      <section style={{ background: "#ffe44d", color: "#000000" }}>
         <div style={sectionWrap}>
           <div style={{ maxWidth: "920px", marginBottom: "30px" }}>
-            <p style={{ ...sectionTitle, color: "#5a1b00" }}>
-              Why Aspire PODS
-            </p>
+            <p style={{ ...sectionTitle, color: "#5f4700" }}>Why Aspire PODS</p>
             <h2 style={sectionHeading}>
               Built to feel like part of the team, not outside of it
             </h2>
@@ -494,7 +605,7 @@ export default function AspireMarionMiniPage() {
                   lineHeight: 1.6,
                   letterSpacing: "0.08em",
                   boxShadow: "0 0 24px rgba(0,0,0,0.08)",
-                  background: index % 2 === 0 ? "#ff9f5f" : "#ffb178",
+                  background: index % 2 === 0 ? "#fff06f" : "#fff6a0",
                 }}
               >
                 {item}
@@ -504,10 +615,11 @@ export default function AspireMarionMiniPage() {
         </div>
       </section>
 
-      <section id="pricing" style={{ background: "#ffe44d", color: "#000000" }}>
+      {/* PRICING */}
+      <section id="pricing" style={{ background: "#000000", color: "#ffffff" }}>
         <div style={sectionWrap}>
           <div style={{ maxWidth: "920px", marginBottom: "30px" }}>
-            <p style={{ ...sectionTitle, color: "#5f4700" }}>Pricing</p>
+            <p style={{ ...sectionTitle, color: "#1ff5ff" }}>Pricing</p>
             <h2 style={sectionHeading}>Flexible monthly structures</h2>
             <p
               style={{
@@ -515,7 +627,7 @@ export default function AspireMarionMiniPage() {
                 maxWidth: "780px",
                 fontSize: "20px",
                 lineHeight: 1.8,
-                color: "rgba(0,0,0,0.82)",
+                color: "rgba(255,255,255,0.82)",
               }}
             >
               Final structure depends on scope, title needs, and support mix. These
@@ -535,10 +647,10 @@ export default function AspireMarionMiniPage() {
                 key={item.tier}
                 style={{
                   borderRadius: "30px",
-                  border: "2px solid rgba(0,0,0,0.12)",
+                  border: "2px solid rgba(255,255,255,0.14)",
                   padding: "24px",
-                  boxShadow: "0 0 24px rgba(0,0,0,0.08)",
-                  background: index === 0 ? "#fff06f" : index === 1 ? "#fff387" : "#fff6a0",
+                  boxShadow: "0 0 24px rgba(255,255,255,0.08)",
+                  background: index === 0 ? "#180816" : index === 1 ? "#07181a" : "#131325",
                 }}
               >
                 <p
@@ -548,7 +660,7 @@ export default function AspireMarionMiniPage() {
                     fontWeight: 900,
                     textTransform: "uppercase",
                     letterSpacing: "0.24em",
-                    color: "rgba(0,0,0,0.7)",
+                    color: "#1ff5ff",
                   }}
                 >
                   {item.tier}
@@ -569,7 +681,7 @@ export default function AspireMarionMiniPage() {
                     margin: 0,
                     fontSize: "16px",
                     lineHeight: 1.72,
-                    color: "rgba(0,0,0,0.82)",
+                    color: "rgba(255,255,255,0.82)",
                   }}
                 >
                   {item.note}
@@ -580,7 +692,8 @@ export default function AspireMarionMiniPage() {
         </div>
       </section>
 
-      <section style={{ background: "#000000", color: "#ffffff" }}>
+      {/* FINAL SECTION */}
+      <section style={{ background: "#0b1220", color: "#ffffff" }}>
         <div style={sectionWrap}>
           <div
             style={{
