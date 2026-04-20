@@ -735,8 +735,24 @@ export default function AspireMarionMiniPage() {
       </section>
 
       {/* FINAL SECTION */}
-      <section style={{ background: "#0b1220", color: "#ffffff" }}>
-        <div style={sectionWrap}>
+      <section
+        style={{
+          background: "#0b1220",
+          color: "#ffffff",
+          position: "relative",
+          overflow: "hidden",
+        }}
+      >
+        <div
+          style={{
+            position: "absolute",
+            inset: 0,
+            background:
+              "radial-gradient(circle at top left, rgba(255,62,165,0.10), transparent 28%), radial-gradient(circle at bottom right, rgba(31,245,255,0.10), transparent 28%)",
+            pointerEvents: "none",
+          }}
+        />
+        <div style={{ ...sectionWrap, position: "relative" }}>
           <div
             style={{
               display: "grid",
@@ -744,6 +760,7 @@ export default function AspireMarionMiniPage() {
               gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
             }}
           >
+            {/* LEFT CARD */}
             <div
               style={{
                 borderRadius: "30px",
@@ -753,15 +770,148 @@ export default function AspireMarionMiniPage() {
                 boxShadow: "0 0 35px rgba(255,62,165,0.22)",
               }}
             >
-              <p style={{ ...sectionTitle, color: "#ffe44d" }}>How we start</p>
-              <ol style={{ margin: "20px 0 0", paddingLeft: "22px", lineHeight: 2 }}>
-                <li>Understand current structure, priorities, and QA goals</li>
-                <li>Design the right POD around studio needs</li>
-                <li>Integrate into workflow, tools, and communication lines</li>
-                <li>Launch, optimize, and scale over time</li>
-              </ol>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "14px",
+                  marginBottom: "18px",
+                }}
+              >
+                <div
+                  style={{
+                    width: "58px",
+                    height: "58px",
+                    borderRadius: "14px",
+                    background: "#000000",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    boxShadow:
+                      "0 0 24px rgba(255,62,165,0.30), 0 0 34px rgba(31,245,255,0.12)",
+                    flexShrink: 0,
+                  }}
+                >
+                  <img
+                    src="/aspire-pods-logo.png"
+                    alt="Aspire PODS logo"
+                    style={{
+                      width: "38px",
+                      height: "38px",
+                      objectFit: "contain",
+                      display: "block",
+                    }}
+                  />
+                </div>
+
+                <div>
+                  <p style={{ ...sectionTitle, color: "#ffe44d" }}>How we start</p>
+                  <h3
+                    style={{
+                      margin: "10px 0 0",
+                      fontSize: "34px",
+                      fontWeight: 900,
+                      textTransform: "uppercase",
+                      letterSpacing: "-0.02em",
+                      lineHeight: 1.02,
+                    }}
+                  >
+                    A clear path from need to launch
+                  </h3>
+                </div>
+              </div>
+
+              <div
+                style={{
+                  display: "grid",
+                  gap: "14px",
+                  marginTop: "22px",
+                }}
+              >
+                {[
+                  {
+                    num: "01",
+                    title: "Review the current reality",
+                    text: "We look at team structure, priorities, workflow gaps, and where support would create the most immediate impact.",
+                  },
+                  {
+                    num: "02",
+                    title: "Shape the right POD",
+                    text: "We design the right support structure around your studio, whether that starts with DevQA, LiveOps validation, release coordination, or a broader operational layer.",
+                  },
+                  {
+                    num: "03",
+                    title: "Plug into your workflow",
+                    text: "We align with your communication lines, tools, sprint cadence, and delivery flow so the partnership feels integrated from day one.",
+                  },
+                  {
+                    num: "04",
+                    title: "Launch and strengthen over time",
+                    text: "We begin where support matters most, then optimize, expand, and evolve the POD as your needs grow.",
+                  },
+                ].map((item) => (
+                  <div
+                    key={item.num}
+                    style={{
+                      borderRadius: "22px",
+                      border: "1px solid rgba(255,255,255,0.08)",
+                      background: "rgba(255,255,255,0.03)",
+                      padding: "18px 18px 18px 16px",
+                    }}
+                  >
+                    <div
+                      style={{
+                        display: "grid",
+                        gridTemplateColumns: "58px 1fr",
+                        gap: "12px",
+                        alignItems: "start",
+                      }}
+                    >
+                      <div
+                        style={{
+                          fontSize: "30px",
+                          fontWeight: 900,
+                          lineHeight: 1,
+                          background:
+                            "linear-gradient(180deg, #ff4dc4 0%, #7cf7ff 100%)",
+                          WebkitBackgroundClip: "text",
+                          backgroundClip: "text",
+                          color: "transparent",
+                          textShadow: "0 0 18px rgba(255,77,196,0.18)",
+                        }}
+                      >
+                        {item.num}
+                      </div>
+
+                      <div>
+                        <div
+                          style={{
+                            fontSize: "21px",
+                            fontWeight: 900,
+                            lineHeight: 1.15,
+                            marginBottom: "8px",
+                            color: "#ffffff",
+                          }}
+                        >
+                          {item.title}
+                        </div>
+                        <div
+                          style={{
+                            fontSize: "16px",
+                            lineHeight: 1.68,
+                            color: "rgba(255,255,255,0.78)",
+                          }}
+                        >
+                          {item.text}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
 
+            {/* RIGHT CARD */}
             <div
               style={{
                 borderRadius: "30px",
@@ -769,45 +919,156 @@ export default function AspireMarionMiniPage() {
                 background: "#07181a",
                 padding: "28px",
                 boxShadow: "0 0 35px rgba(31,245,255,0.2)",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "space-between",
               }}
             >
-              <p style={{ ...sectionTitle, color: "#1ff5ff" }}>Next step</p>
-              <h3
-                style={{
-                  margin: "12px 0 20px",
-                  fontSize: "36px",
-                  fontWeight: 900,
-                  textTransform: "uppercase",
-                  letterSpacing: "-0.02em",
-                  lineHeight: 1.05,
-                }}
-              >
-                Happy to discuss what this could look like for your team
-              </h3>
-              <p
-                style={{
-                  margin: 0,
-                  maxWidth: "680px",
-                  fontSize: "18px",
-                  lineHeight: 1.72,
-                  color: "rgba(255,255,255,0.86)",
-                }}
-              >
-                We can walk through current needs, explore the right North America
-                support structure, and outline how Aspire PODS could operate as a long term partner.
-              </p>
+              <div>
+                <p style={{ ...sectionTitle, color: "#1ff5ff" }}>Next step</p>
+                <h3
+                  style={{
+                    margin: "12px 0 20px",
+                    fontSize: "36px",
+                    fontWeight: 900,
+                    textTransform: "uppercase",
+                    letterSpacing: "-0.02em",
+                    lineHeight: 1.05,
+                  }}
+                >
+                  Happy to discuss what this could look like for your team
+                </h3>
+                <p
+                  style={{
+                    margin: 0,
+                    maxWidth: "680px",
+                    fontSize: "18px",
+                    lineHeight: 1.72,
+                    color: "rgba(255,255,255,0.86)",
+                  }}
+                >
+                  We can walk through current needs, explore the right North America
+                  support structure, and outline how Aspire PODS could operate as a long term partner.
+                </p>
+              </div>
 
-              <a
-                href="https://us06web.zoom.us/j/83714913737?pwd=Z6O3McqxGtbAf25pYav3mnRb50JyMi.1"
-                target="_blank"
-                rel="noopener noreferrer"
+              <div
                 style={{
-                  ...primaryCtaStyle,
-                  marginTop: "24px",
+                  marginTop: "28px",
+                  display: "flex",
+                  flexWrap: "wrap",
+                  alignItems: "center",
+                  justifyContent: "space-between",
+                  gap: "20px",
                 }}
               >
-                Schedule time with Jess
-              </a>
+                <a
+                  href="https://us06web.zoom.us/j/83714913737?pwd=Z6O3McqxGtbAf25pYav3mnRb50JyMi.1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    ...primaryCtaStyle,
+                    marginTop: 0,
+                  }}
+                >
+                  Schedule time with Jess
+                </a>
+
+                <div
+                  style={{
+                    position: "relative",
+                    width: "118px",
+                    height: "118px",
+                    flexShrink: 0,
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
+                >
+                  <div
+                    style={{
+                      position: "absolute",
+                      inset: 0,
+                      borderRadius: "999px",
+                      background: "rgba(255,62,165,0.16)",
+                      filter: "blur(20px)",
+                    }}
+                  />
+                  <div
+                    style={{
+                      position: "absolute",
+                      inset: "10px",
+                      borderRadius: "999px",
+                      background: "rgba(31,245,255,0.14)",
+                      filter: "blur(18px)",
+                    }}
+                  />
+
+                  <svg
+                    viewBox="0 0 100 100"
+                    width="100"
+                    height="100"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-label="Peace symbol"
+                    style={{
+                      position: "relative",
+                      overflow: "visible",
+                      filter: "drop-shadow(0 0 10px rgba(255,79,195,0.45)) drop-shadow(0 0 16px rgba(57,247,255,0.28))",
+                    }}
+                  >
+                    <defs>
+                      <linearGradient
+                        id="peaceGradient"
+                        x1="0"
+                        y1="0"
+                        x2="100"
+                        y2="100"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stopColor="#ff4fc3" />
+                        <stop offset="0.5" stopColor="#ffd76a" />
+                        <stop offset="1" stopColor="#39f7ff" />
+                      </linearGradient>
+                    </defs>
+
+                    <circle
+                      cx="50"
+                      cy="50"
+                      r="42"
+                      stroke="url(#peaceGradient)"
+                      strokeWidth="4.5"
+                    />
+                    <line
+                      x1="50"
+                      y1="12"
+                      x2="50"
+                      y2="74"
+                      stroke="url(#peaceGradient)"
+                      strokeWidth="4.5"
+                      strokeLinecap="round"
+                    />
+                    <line
+                      x1="50"
+                      y1="74"
+                      x2="24"
+                      y2="50"
+                      stroke="url(#peaceGradient)"
+                      strokeWidth="4.5"
+                      strokeLinecap="round"
+                    />
+                    <line
+                      x1="50"
+                      y1="74"
+                      x2="76"
+                      y2="50"
+                      stroke="url(#peaceGradient)"
+                      strokeWidth="4.5"
+                      strokeLinecap="round"
+                    />
+                  </svg>
+                </div>
+              </div>
             </div>
           </div>
         </div>
