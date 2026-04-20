@@ -738,7 +738,7 @@ export default function AspireMarionMiniPage() {
       <section
         style={{
           background:
-            "linear-gradient(90deg, #041126 0%, #071426 35%, #081627 65%, #071326 100%)",
+            "linear-gradient(90deg, #031024 0%, #041226 34%, #061628 68%, #051224 100%)",
           color: "#ffffff",
           position: "relative",
           overflow: "hidden",
@@ -749,7 +749,7 @@ export default function AspireMarionMiniPage() {
             position: "absolute",
             inset: 0,
             background:
-              "radial-gradient(circle at 12% 50%, rgba(255,62,165,0.10), transparent 26%), radial-gradient(circle at 88% 52%, rgba(31,245,255,0.12), transparent 26%), radial-gradient(circle at 50% 100%, rgba(112,76,255,0.10), transparent 34%)",
+              "radial-gradient(circle at 12% 50%, rgba(255,62,165,0.12), transparent 26%), radial-gradient(circle at 88% 52%, rgba(31,245,255,0.12), transparent 26%), radial-gradient(circle at 50% 100%, rgba(112,76,255,0.10), transparent 34%)",
             pointerEvents: "none",
           }}
         />
@@ -765,145 +765,44 @@ export default function AspireMarionMiniPage() {
             {/* LEFT CARD */}
             <div
               style={{
-                borderRadius: "32px",
-                border: "2px solid rgba(255,62,165,0.68)",
-                background: "linear-gradient(180deg, rgba(34,0,22,0.96) 0%, rgba(22,0,14,0.98) 100%)",
-                padding: "38px 38px 34px",
+                borderRadius: "34px",
+                border: "2px solid rgba(255,62,165,0.72)",
+                background: "linear-gradient(180deg, rgba(32,0,20,0.97) 0%, rgba(24,0,16,0.99) 100%)",
+                padding: "40px 42px 38px",
                 boxShadow: "0 0 44px rgba(255,62,165,0.18)",
               }}
             >
-              <div
+              <p
                 style={{
-                  display: "flex",
-                  alignItems: "flex-start",
-                  gap: "16px",
-                  marginBottom: "26px",
+                  ...sectionTitle,
+                  color: "#ffe44d",
+                  marginBottom: "30px",
+                  fontSize: "18px",
+                  letterSpacing: "0.28em",
                 }}
               >
-                <div
-                  style={{
-                    width: "62px",
-                    height: "62px",
-                    borderRadius: "16px",
-                    background: "#000000",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    boxShadow:
-                      "0 0 24px rgba(255,62,165,0.28), 0 0 34px rgba(31,245,255,0.10)",
-                    flexShrink: 0,
-                  }}
-                >
-                  <img
-                    src="/aspire-pods-logo.png"
-                    alt="Aspire PODS logo"
-                    style={{
-                      width: "40px",
-                      height: "40px",
-                      objectFit: "contain",
-                      display: "block",
-                    }}
-                  />
-                </div>
+                How we start
+              </p>
 
-                <div>
-                  <p style={{ ...sectionTitle, color: "#ffe44d" }}>How we start</p>
-                  <h3
-                    style={{
-                      margin: "10px 0 0",
-                      fontSize: "38px",
-                      fontWeight: 900,
-                      textTransform: "uppercase",
-                      letterSpacing: "-0.03em",
-                      lineHeight: 0.98,
-                      maxWidth: "520px",
-                    }}
-                  >
-                    A clear path from need to launch
-                  </h3>
-                </div>
-              </div>
-
-              <div style={{ display: "grid", gap: "16px" }}>
+              <div style={{ display: "grid", gap: "26px" }}>
                 {[
-                  {
-                    num: "01",
-                    title: "Review the current reality",
-                    text: "Look at team structure, priorities, workflow gaps, and where support would create the strongest immediate value.",
-                  },
-                  {
-                    num: "02",
-                    title: "Define the right support shape",
-                    text: "Build the right POD around the real need, whether that starts with DevQA, LiveOps validation, release coordination, or wider operational support.",
-                  },
-                  {
-                    num: "03",
-                    title: "Align into the workflow",
-                    text: "Connect into communication lines, sprint rhythm, tools, and delivery flow so support feels integrated from the start.",
-                  },
-                  {
-                    num: "04",
-                    title: "Launch and strengthen over time",
-                    text: "Begin where support matters most, then optimize, expand, and evolve the POD as priorities and production needs grow.",
-                  },
+                  "1. UNDERSTAND CURRENT STRUCTURE, PRIORITIES, AND QA GOALS",
+                  "2. DESIGN THE RIGHT POD AROUND STUDIO NEEDS",
+                  "3. INTEGRATE INTO WORKFLOW, TOOLS, AND COMMUNICATION LINES",
+                  "4. LAUNCH, OPTIMIZE, AND SCALE OVER TIME",
                 ].map((item) => (
                   <div
-                    key={item.num}
+                    key={item}
                     style={{
-                      borderRadius: "24px",
-                      border: "1px solid rgba(255,255,255,0.08)",
-                      background: "rgba(255,255,255,0.035)",
-                      padding: "18px 20px",
-                      boxShadow: "inset 0 1px 0 rgba(255,255,255,0.03)",
+                      fontSize: "24px",
+                      lineHeight: 1.38,
+                      fontWeight: 900,
+                      letterSpacing: "-0.02em",
+                      textTransform: "uppercase",
+                      color: "#ffffff",
                     }}
                   >
-                    <div
-                      style={{
-                        display: "grid",
-                        gridTemplateColumns: "64px 1fr",
-                        gap: "14px",
-                        alignItems: "start",
-                      }}
-                    >
-                      <div
-                        style={{
-                          fontSize: "31px",
-                          fontWeight: 900,
-                          lineHeight: 1,
-                          background:
-                            "linear-gradient(180deg, #ff57c8 0%, #75f6ff 100%)",
-                          WebkitBackgroundClip: "text",
-                          backgroundClip: "text",
-                          color: "transparent",
-                          textShadow: "0 0 18px rgba(255,77,196,0.16)",
-                        }}
-                      >
-                        {item.num}
-                      </div>
-
-                      <div>
-                        <div
-                          style={{
-                            fontSize: "19px",
-                            fontWeight: 900,
-                            lineHeight: 1.18,
-                            marginBottom: "7px",
-                            color: "#ffffff",
-                          }}
-                        >
-                          {item.title}
-                        </div>
-                        <div
-                          style={{
-                            fontSize: "15px",
-                            lineHeight: 1.66,
-                            color: "rgba(255,255,255,0.79)",
-                          }}
-                        >
-                          {item.text}
-                        </div>
-                      </div>
-                    </div>
+                    {item}
                   </div>
                 ))}
               </div>
@@ -912,10 +811,10 @@ export default function AspireMarionMiniPage() {
             {/* RIGHT CARD */}
             <div
               style={{
-                borderRadius: "32px",
-                border: "2px solid rgba(31,245,255,0.72)",
-                background: "linear-gradient(180deg, rgba(1,35,34,0.96) 0%, rgba(1,20,21,0.98) 100%)",
-                padding: "42px 38px 34px",
+                borderRadius: "34px",
+                border: "2px solid rgba(31,245,255,0.76)",
+                background: "linear-gradient(180deg, rgba(1,35,34,0.97) 0%, rgba(1,20,21,0.99) 100%)",
+                padding: "40px 42px 38px",
                 boxShadow: "0 0 46px rgba(31,245,255,0.16)",
                 display: "flex",
                 flexDirection: "column",
@@ -924,26 +823,38 @@ export default function AspireMarionMiniPage() {
               }}
             >
               <div>
-                <p style={{ ...sectionTitle, color: "#1ff5ff" }}>Next step</p>
+                <p
+                  style={{
+                    ...sectionTitle,
+                    color: "#1ff5ff",
+                    marginBottom: "20px",
+                    fontSize: "18px",
+                    letterSpacing: "0.28em",
+                  }}
+                >
+                  Next step
+                </p>
+
                 <h3
                   style={{
-                    margin: "14px 0 22px",
-                    fontSize: "40px",
+                    margin: "0 0 28px",
+                    fontSize: "58px",
                     fontWeight: 900,
                     textTransform: "uppercase",
-                    letterSpacing: "-0.03em",
-                    lineHeight: 0.98,
-                    maxWidth: "540px",
+                    letterSpacing: "-0.04em",
+                    lineHeight: 0.97,
+                    maxWidth: "620px",
                   }}
                 >
                   Happy to discuss what this could look like for your team
                 </h3>
+
                 <p
                   style={{
                     margin: 0,
-                    maxWidth: "560px",
-                    fontSize: "18px",
-                    lineHeight: 1.76,
+                    maxWidth: "620px",
+                    fontSize: "22px",
+                    lineHeight: 1.72,
                     color: "rgba(255,255,255,0.86)",
                   }}
                 >
@@ -970,9 +881,10 @@ export default function AspireMarionMiniPage() {
                   style={{
                     ...primaryCtaStyle,
                     marginTop: 0,
-                    borderRadius: "20px",
-                    padding: "18px 30px",
-                    fontSize: "14px",
+                    borderRadius: "22px",
+                    padding: "20px 38px",
+                    fontSize: "18px",
+                    letterSpacing: "0.18em",
                     boxShadow: "0 0 36px rgba(255,62,165,0.42)",
                   }}
                 >
@@ -982,8 +894,8 @@ export default function AspireMarionMiniPage() {
                 <div
                   style={{
                     position: "relative",
-                    width: "126px",
-                    height: "126px",
+                    width: "138px",
+                    height: "138px",
                     flexShrink: 0,
                     display: "flex",
                     alignItems: "center",
@@ -998,7 +910,7 @@ export default function AspireMarionMiniPage() {
                       borderRadius: "999px",
                       background:
                         "radial-gradient(circle, rgba(255,89,198,0.24) 0%, rgba(255,89,198,0.10) 42%, transparent 72%)",
-                      filter: "blur(18px)",
+                      filter: "blur(20px)",
                     }}
                   />
                   <div
@@ -1008,14 +920,14 @@ export default function AspireMarionMiniPage() {
                       borderRadius: "999px",
                       background:
                         "radial-gradient(circle, rgba(57,247,255,0.20) 0%, rgba(57,247,255,0.08) 42%, transparent 72%)",
-                      filter: "blur(16px)",
+                      filter: "blur(18px)",
                     }}
                   />
 
                   <svg
                     viewBox="0 0 120 120"
-                    width="112"
-                    height="112"
+                    width="118"
+                    height="118"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                     aria-label="Peace symbol"
@@ -1023,7 +935,7 @@ export default function AspireMarionMiniPage() {
                       position: "relative",
                       overflow: "visible",
                       filter:
-                        "drop-shadow(0 0 10px rgba(255,79,195,0.45)) drop-shadow(0 0 18px rgba(57,247,255,0.30))",
+                        "drop-shadow(0 0 12px rgba(255,79,195,0.50)) drop-shadow(0 0 18px rgba(57,247,255,0.34))",
                     }}
                   >
                     <defs>
@@ -1083,8 +995,8 @@ export default function AspireMarionMiniPage() {
         </div>
 
         <style>{`
-          @media (max-width: 980px) {
-            section[style*="linear-gradient(90deg, #041126"] div[style*="grid-template-columns: 1fr 1fr"] {
+          @media (max-width: 1100px) {
+            .aspire-final-grid {
               grid-template-columns: 1fr !important;
             }
           }
