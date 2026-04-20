@@ -81,17 +81,17 @@ export default function AspireMarionMiniPage() {
   const pricing = [
     {
       tier: "Single POD",
-      price: "$12K – $20K",
+      price: "$12K – $20K USD / MONTH",
       note: "Best for a focused QA or operational lane tied to a specific title, release stream, or support need.",
     },
     {
       tier: "Growth POD",
-      price: "$20K – $45K",
+      price: "$20K – $45K USD / MONTH",
       note: "Built for teams that need broader cross-functional support across QA, LiveOps, release coordination, or player-facing operations.",
     },
     {
       tier: "Multi POD",
-      price: "$45K+",
+      price: "$45K+ USD / MONTH",
       note: "Designed for larger-scale operational infrastructure across multiple functions, workstreams, or game needs over time.",
     },
   ];
@@ -660,8 +660,7 @@ export default function AspireMarionMiniPage() {
               }}
             >
               Pricing depends on scope, team shape, and support mix. These ranges are
-              designed to show how Aspire PODS can start focused, expand by function,
-              and scale with operational complexity.
+              designed to show how Aspire PODS can start focused, expand by function, and scale with operational complexity.
             </p>
             <p
               style={{
@@ -672,8 +671,7 @@ export default function AspireMarionMiniPage() {
                 color: "rgba(255,255,255,0.72)",
               }}
             >
-              Final structure is shaped around title needs, workflow integration, and the
-              level of embedded support required.
+              Final structure is shaped around title needs, workflow integration, and the level of embedded support required.
             </p>
           </div>
 
@@ -869,14 +867,7 @@ export default function AspireMarionMiniPage() {
                       "drop-shadow(0 0 12px rgba(255,79,195,0.5)) drop-shadow(0 0 18px rgba(57,247,255,0.4))",
                   }}
                 >
-                  <svg
-                    viewBox="0 0 120 120"
-                    width="80"
-                    height="80"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    aria-label="Peace symbol"
-                  >
+                  <svg viewBox="0 0 120 120" width="80" height="80">
                     <defs>
                       <linearGradient
                         id="peaceGradient"
@@ -884,7 +875,6 @@ export default function AspireMarionMiniPage() {
                         y1="0"
                         x2="120"
                         y2="120"
-                        gradientUnits="userSpaceOnUse"
                       >
                         <stop stopColor="#ff5dc0" />
                         <stop offset="0.5" stopColor="#ffd86a" />
@@ -898,6 +888,7 @@ export default function AspireMarionMiniPage() {
                       r="48"
                       stroke="url(#peaceGradient)"
                       strokeWidth="4"
+                      fill="none"
                     />
                     <line
                       x1="60"
@@ -906,7 +897,6 @@ export default function AspireMarionMiniPage() {
                       y2="100"
                       stroke="url(#peaceGradient)"
                       strokeWidth="4"
-                      strokeLinecap="round"
                     />
                     <line
                       x1="60"
@@ -915,7 +905,6 @@ export default function AspireMarionMiniPage() {
                       y2="90"
                       stroke="url(#peaceGradient)"
                       strokeWidth="4"
-                      strokeLinecap="round"
                     />
                     <line
                       x1="60"
@@ -924,7 +913,6 @@ export default function AspireMarionMiniPage() {
                       y2="90"
                       stroke="url(#peaceGradient)"
                       strokeWidth="4"
-                      strokeLinecap="round"
                     />
                   </svg>
                 </div>
