@@ -382,20 +382,21 @@ export default function AspireMarionMiniPage() {
               What this could look like
             </p>
             <h2 style={sectionHeading}>
-              A Scopely-aligned North America POD structure
+              A practical North America POD model for Scopely
             </h2>
             <p
               style={{
                 margin: 0,
-                maxWidth: "820px",
+                maxWidth: "860px",
                 fontSize: "20px",
                 lineHeight: 1.8,
                 color: "rgba(0,0,0,0.82)",
               }}
             >
-              Aspire can operate as a flexible extension of Scopely’s quality and
-              operational infrastructure, supporting North America coverage while
-              staying aligned with leadership, production priorities, and quality standards.
+              Aspire PODS can be structured around the way Scopely teams actually work.
+              That can mean embedded DevQA support inside feature teams, operational
+              coverage across North America, and additional LiveOps validation as release
+              and event needs change.
             </p>
           </div>
 
@@ -408,18 +409,18 @@ export default function AspireMarionMiniPage() {
           >
             {[
               {
-                title: "North America support layer",
-                body: "A POD built to support workflows, schedules, communication, and coverage across North America.",
+                title: "Embedded DevQA pod",
+                body: "DevQA support embedded inside feature teams and sprint cycles, with coverage across test planning, validation, defect triage, and release readiness.",
                 bg: "#7af9ff",
               },
               {
-                title: "QA plus operational alignment",
-                body: "Support structure designed to align directly with quality leadership, delivery expectations, and long term operational consistency.",
+                title: "LiveOps and release support",
+                body: "Additional QA coverage for LiveOps events, feature flags, configuration validation, economy checks, and release-related operational support.",
                 bg: "#54efff",
               },
               {
-                title: "Scalable by title or need",
-                body: "PODS can stay focused, expand by function, or grow as production and Live Ops needs change.",
+                title: "Flexible deployment model",
+                body: "PODS can stay focused on a single title, support multiple workstreams, or expand by function as roadmap, release, and LiveOps needs evolve.",
                 bg: "#2be6ff",
               },
             ].map((item) => (
