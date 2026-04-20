@@ -82,17 +82,17 @@ export default function AspireMarionMiniPage() {
     {
       tier: "Single POD",
       price: "$12K – $20K",
-      note: "Focused support with a small embedded team built around clear operational needs.",
+      note: "Best for a focused QA or operational lane tied to a specific title, release stream, or support need.",
     },
     {
       tier: "Growth POD",
       price: "$20K – $45K",
-      note: "Expanded support across multiple functions for teams needing broader coverage.",
+      note: "Built for teams that need broader cross-functional support across QA, LiveOps, release coordination, or player-facing operations.",
     },
     {
       tier: "Multi POD",
       price: "$45K+",
-      note: "Built for larger scale infrastructure, multi function support, and long term operational depth.",
+      note: "Designed for larger-scale operational infrastructure across multiple functions, workstreams, or game needs over time.",
     },
   ];
 
@@ -647,20 +647,33 @@ export default function AspireMarionMiniPage() {
       {/* PRICING */}
       <section id="pricing" style={{ background: "#000000", color: "#ffffff" }}>
         <div style={sectionWrap}>
-          <div style={{ maxWidth: "920px", marginBottom: "30px" }}>
+          <div style={{ maxWidth: "960px", marginBottom: "30px" }}>
             <p style={{ ...sectionTitle, color: "#1ff5ff" }}>Pricing</p>
-            <h2 style={sectionHeading}>Flexible monthly structures</h2>
+            <h2 style={sectionHeading}>Flexible monthly POD models</h2>
             <p
               style={{
                 margin: 0,
-                maxWidth: "780px",
+                maxWidth: "860px",
                 fontSize: "20px",
                 lineHeight: 1.8,
                 color: "rgba(255,255,255,0.82)",
               }}
             >
-              Final structure depends on scope, title needs, and support mix. These
-              ranges give a clear starting point for what an Aspire POD model can look like.
+              Pricing depends on scope, team shape, and support mix. These ranges are
+              designed to show how Aspire PODS can start focused, expand by function,
+              and scale with operational complexity.
+            </p>
+            <p
+              style={{
+                margin: "14px 0 0",
+                maxWidth: "860px",
+                fontSize: "17px",
+                lineHeight: 1.7,
+                color: "rgba(255,255,255,0.72)",
+              }}
+            >
+              Final structure is shaped around title needs, workflow integration, and the
+              level of embedded support required.
             </p>
           </div>
 
