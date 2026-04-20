@@ -9,12 +9,16 @@ export default function AspireMarionMiniPage() {
   ];
 
   const differentiators = [
-    "Embedded into real studio workflows",
-    "Built as long term operational infrastructure",
-    "Flexible teams that scale with game needs",
-    "North America coverage with strong alignment",
-    "Partner model, not traditional outsourcing",
-    "Structured for speed, quality, and stability",
+    "Embedded in sprint cycles, standups, planning, and retros",
+    "DevQA inside feature teams, not post-release QA",
+    "Shift-left testing across development lifecycle",
+    "Automation coverage across UI, API, and backend",
+    "CI/CD integration with GitHub Actions, Jenkins pipelines",
+    "Validates LiveOps configs, feature flags, A/B tests",
+    "Supports F2P systems including economy and progression",
+    "North America timezone alignment for real-time collaboration",
+    "Engine familiarity and ability to read production code",
+    "Partner model focused on ownership, not ticket execution",
   ];
 
   const scopelyFit = [
@@ -114,14 +118,6 @@ export default function AspireMarionMiniPage() {
     margin: "14px 0 28px",
     lineHeight: 1.02,
   };
-
-  const darkCard = {
-    borderRadius: "28px",
-    border: "2px solid rgba(255,255,255,0.18)",
-    background: "rgba(0,0,0,0.22)",
-    boxShadow: "0 0 40px rgba(255,255,255,0.08)",
-    backdropFilter: "blur(8px)",
-  } as const;
 
   const primaryCtaStyle = {
     display: "inline-block",
@@ -581,7 +577,7 @@ export default function AspireMarionMiniPage() {
           <div style={{ maxWidth: "920px", marginBottom: "30px" }}>
             <p style={{ ...sectionTitle, color: "#5f4700" }}>Why Aspire PODS</p>
             <h2 style={sectionHeading}>
-              Built to feel like part of the team, not outside of it
+              Built to operate inside your development cycle
             </h2>
           </div>
 
@@ -599,11 +595,11 @@ export default function AspireMarionMiniPage() {
                   borderRadius: "24px",
                   border: "2px solid rgba(0,0,0,0.12)",
                   padding: "20px",
-                  fontSize: "14px",
+                  fontSize: "13px",
                   fontWeight: 900,
                   textTransform: "uppercase",
                   lineHeight: 1.6,
-                  letterSpacing: "0.08em",
+                  letterSpacing: "0.06em",
                   boxShadow: "0 0 24px rgba(0,0,0,0.08)",
                   background: index % 2 === 0 ? "#fff06f" : "#fff6a0",
                 }}
