@@ -249,30 +249,28 @@ export default function AspireMarionMiniPage() {
 
               <p
                 style={{
-                  margin: "0 0 16px",
-                  maxWidth: "760px",
+                  margin: "0 0 18px",
+                  maxWidth: "720px",
                   fontSize: "20px",
-                  lineHeight: 1.6,
+                  lineHeight: 1.58,
                   color: "rgba(255,255,255,0.95)",
                 }}
               >
-                Prepared for Marion, this overview shows how Aspire PODS can support QA,
-                LiveOps, and production workflows in North America through embedded teams
-                that work inside active development cycles.
+                Prepared for Marion, this overview shows how Aspire PODS can support
+                embedded QA, LiveOps, and production workflows across North America.
               </p>
 
               <p
                 style={{
                   margin: 0,
-                  maxWidth: "760px",
+                  maxWidth: "720px",
                   fontSize: "17px",
                   fontWeight: 600,
-                  lineHeight: 1.65,
+                  lineHeight: 1.62,
                   color: "rgba(255,255,255,0.85)",
                 }}
               >
-                The focus is simple. Plug into feature teams early. Support shift-left QA.
-                Align with LiveOps realities. Operate as part of the team, not after the work is done.
+                Built to plug into active development cycles with real operational support.
               </p>
 
               <div
