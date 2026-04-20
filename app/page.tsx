@@ -182,7 +182,7 @@ export default function AspireMarionMiniPage() {
             style={{
               display: "grid",
               gap: "42px",
-              gridTemplateColumns: "minmax(340px, 400px) minmax(0, 1fr)",
+              gridTemplateColumns: "minmax(300px, 360px) minmax(0, 1fr)",
               alignItems: "center",
             }}
           >
@@ -194,8 +194,8 @@ export default function AspireMarionMiniPage() {
             >
               <div
                 style={{
-                  width: "320px",
-                  minHeight: "320px",
+                  width: "280px",
+                  minHeight: "280px",
                   borderRadius: "2px",
                   background: "#000000",
                   boxShadow:
@@ -203,7 +203,7 @@ export default function AspireMarionMiniPage() {
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
-                  padding: "30px",
+                  padding: "24px",
                 }}
               >
                 <img
@@ -211,7 +211,7 @@ export default function AspireMarionMiniPage() {
                   alt="Aspire PODS logo"
                   style={{
                     width: "100%",
-                    maxWidth: "260px",
+                    maxWidth: "220px",
                     objectFit: "contain",
                     display: "block",
                   }}
@@ -236,44 +236,43 @@ export default function AspireMarionMiniPage() {
               <h1
                 style={{
                   margin: "16px 0 22px",
-                  maxWidth: "930px",
-                  fontSize: "64px",
+                  maxWidth: "900px",
+                  fontSize: "62px",
                   fontWeight: 900,
                   textTransform: "uppercase",
                   lineHeight: 0.95,
                   letterSpacing: "-0.035em",
                 }}
               >
-                Aspire PODS as Scopely’s North America operational partner
+                Aspire PODS for Scopely’s North America QA and operational support
               </h1>
 
               <p
                 style={{
                   margin: "0 0 16px",
-                  maxWidth: "780px",
-                  fontSize: "22px",
-                  lineHeight: 1.62,
+                  maxWidth: "760px",
+                  fontSize: "20px",
+                  lineHeight: 1.6,
                   color: "rgba(255,255,255,0.95)",
                 }}
               >
-                Built for Marion at Scopely, this overview outlines how Aspire PODS
-                can support a stronger North America QA and operational model through
-                embedded teams that work inside real studio workflows.
+                Prepared for Marion, this overview shows how Aspire PODS can support QA,
+                LiveOps, and production workflows in North America through embedded teams
+                that work inside active development cycles.
               </p>
 
               <p
                 style={{
                   margin: 0,
-                  maxWidth: "800px",
-                  fontSize: "18px",
+                  maxWidth: "760px",
+                  fontSize: "17px",
                   fontWeight: 600,
-                  lineHeight: 1.7,
-                  color: "rgba(255,255,255,0.88)",
+                  lineHeight: 1.65,
+                  color: "rgba(255,255,255,0.85)",
                 }}
               >
-                Aspire is positioned to support QA, Live Ops, production coordination,
-                and player-facing operations with structured pods that align with
-                development, speed, quality, communication, and long term execution.
+                The focus is simple. Plug into feature teams early. Support shift-left QA.
+                Align with LiveOps realities. Operate as part of the team, not after the work is done.
               </p>
 
               <div
@@ -281,7 +280,7 @@ export default function AspireMarionMiniPage() {
                   display: "flex",
                   flexWrap: "wrap",
                   gap: "16px",
-                  marginTop: "34px",
+                  marginTop: "30px",
                 }}
               >
                 <a
