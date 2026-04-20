@@ -307,7 +307,7 @@ export default function AspireMarionMiniPage() {
           <div style={{ maxWidth: "920px", marginBottom: "30px" }}>
             <p style={{ ...sectionTitle, color: "#fff3a2" }}>At a glance</p>
             <h2 style={sectionHeading}>
-              The structure, the fit, and the partner model
+              The structure, the fit, and the operating model
             </h2>
           </div>
 
@@ -320,23 +320,23 @@ export default function AspireMarionMiniPage() {
           >
             {[
               {
-                title: "Who this is for",
-                text: "Marion, Head of QA at Scopely, exploring a stronger North America operational partner model.",
+                title: "Scope",
+                text: "North America QA, LiveOps, production support, and player-facing operational coverage.",
                 bg: "#ff63b9",
               },
               {
-                title: "What Aspire is",
-                text: "Embedded POD infrastructure, not traditional outsourcing and not a staffing-only approach.",
+                title: "Model",
+                text: "Embedded POD structure built to work inside active development and release cycles.",
                 bg: "#ff8a3d",
               },
               {
-                title: "What we want",
-                text: "Aspire PODS positioned as Scopely’s North America operational partner.",
+                title: "Operational fit",
+                text: "Designed for shift-left QA, DevQA integration, LiveOps validation, and cross-functional alignment.",
                 bg: "#7c4dff",
               },
               {
-                title: "How we fit",
-                text: "Inside the workflow, aligned to development, quality, Live Ops, and execution realities.",
+                title: "North America support",
+                text: "Timezone-aligned collaboration that supports faster communication, fewer handoff delays, and better operational continuity.",
                 bg: "#a353ff",
               },
             ].map((item) => (
