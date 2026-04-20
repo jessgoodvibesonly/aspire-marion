@@ -1,11 +1,11 @@
 export default function AspireMarionMiniPage() {
   const podFunctions = [
-    "Embedded QA support",
-    "Live Ops support",
-    "Production coordination",
-    "Player support and community",
-    "Localization support",
-    "Monetization support",
+    "Embedded DevQA\nFeature-team QA support inside development cycles",
+    "LiveOps Validation\nEvents, feature flags, configs, economy, and release checks",
+    "Release Coordination\nCross-functional support around readiness, handoff, and execution",
+    "Player Experience Support\nPlayer-facing quality, sentiment, edge cases, and service awareness",
+    "Localization Operations\nContent readiness, language rollout support, and launch coordination",
+    "Monetization & Economy QA\nOffer logic, progression checks, economy validation, and event alignment",
   ];
 
   const differentiators = [
@@ -461,26 +461,26 @@ export default function AspireMarionMiniPage() {
         </div>
       </section>
 
-      {/* SCOPELY RELEVANCE */}
+      {/* RELEVANT TO SCOPELY */}
       <section style={{ background: "#7c4dff", color: "#ffffff" }}>
         <div style={sectionWrap}>
           <div style={{ maxWidth: "960px", marginBottom: "30px" }}>
             <p style={{ ...sectionTitle, color: "#ffe44d" }}>Relevant to Scopely</p>
             <h2 style={sectionHeading}>
-              Built around the quality model modern game teams are asking for
+              Aligned with the embedded DevQA model Scopely teams are asking for
             </h2>
             <p
               style={{
                 margin: 0,
-                maxWidth: "820px",
+                maxWidth: "860px",
                 fontSize: "20px",
                 lineHeight: 1.8,
                 color: "rgba(255,255,255,0.86)",
               }}
             >
-              This model aligns with the type of embedded DevQA partner structure
-              Scopely teams look for: integrated, technical, live service aware,
-              collaborative, and flexible inside an open market model.
+              This structure aligns with the kind of embedded DevQA support Scopely teams
+              are looking for: integrated into development, technically capable, live-service
+              aware, and flexible within an open market model.
             </p>
           </div>
 
@@ -529,14 +529,12 @@ export default function AspireMarionMiniPage() {
         </div>
       </section>
 
-      {/* POD FUNCTIONS */}
+      {/* CORE FUNCTIONS */}
       <section style={{ background: "#ff8a3d", color: "#000000" }}>
         <div style={sectionWrap}>
-          <div style={{ maxWidth: "900px", marginBottom: "30px" }}>
+          <div style={{ maxWidth: "940px", marginBottom: "30px" }}>
             <p style={{ ...sectionTitle, color: "#5a1b00" }}>Core functions</p>
-            <h2 style={sectionHeading}>
-              Designed around what modern game teams actually need
-            </h2>
+            <h2 style={sectionHeading}>Operating lanes built for live games</h2>
           </div>
 
           <div
@@ -546,25 +544,44 @@ export default function AspireMarionMiniPage() {
               gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
             }}
           >
-            {podFunctions.map((item, index) => (
-              <div
-                key={item}
-                style={{
-                  borderRadius: "18px",
-                  border: "2px solid rgba(0,0,0,0.12)",
-                  padding: "20px",
-                  fontSize: "16px",
-                  fontWeight: 900,
-                  textTransform: "uppercase",
-                  letterSpacing: "0.08em",
-                  boxShadow: "0 0 24px rgba(0,0,0,0.08)",
-                  background:
-                    index % 3 === 0 ? "#ff9f5f" : index % 3 === 1 ? "#ffb178" : "#ffc18d",
-                }}
-              >
-                {item}
-              </div>
-            ))}
+            {podFunctions.map((item, index) => {
+              const [title, desc] = item.split("\n");
+              return (
+                <div
+                  key={title}
+                  style={{
+                    borderRadius: "18px",
+                    border: "2px solid rgba(0,0,0,0.12)",
+                    padding: "20px",
+                    boxShadow: "0 0 24px rgba(0,0,0,0.08)",
+                    background:
+                      index % 3 === 0 ? "#ff9f5f" : index % 3 === 1 ? "#ffb178" : "#ffc18d",
+                  }}
+                >
+                  <div
+                    style={{
+                      fontSize: "15px",
+                      fontWeight: 900,
+                      textTransform: "uppercase",
+                      letterSpacing: "0.08em",
+                      lineHeight: 1.25,
+                      marginBottom: "10px",
+                    }}
+                  >
+                    {title}
+                  </div>
+                  <div
+                    style={{
+                      fontSize: "16px",
+                      lineHeight: 1.6,
+                      color: "rgba(0,0,0,0.82)",
+                    }}
+                  >
+                    {desc}
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
