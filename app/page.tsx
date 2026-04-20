@@ -9,16 +9,16 @@ export default function AspireMarionMiniPage() {
   ];
 
   const differentiators = [
-    "Embedded in sprint cycles, standups, planning, and retros",
-    "DevQA inside feature teams, not post-release QA",
-    "Shift-left testing across development lifecycle",
-    "Automation coverage across UI, API, and backend",
-    "CI/CD integration with GitHub Actions, Jenkins pipelines",
-    "Validates LiveOps configs, feature flags, A/B tests",
-    "Supports F2P systems including economy and progression",
-    "North America timezone alignment for real-time collaboration",
-    "Engine familiarity and ability to read production code",
-    "Partner model focused on ownership, not ticket execution",
+    "Integrated into daily team flow\nPresent in standups, planning, and sprint execution. Not a separate QA layer or external queue.",
+    "Feature-level QA ownership\nQA embedded per feature or system. Responsible for validation before release readiness.",
+    "Continuous validation, not final testing\nTesting happens during development, not compressed into end-of-cycle QA windows.",
+    "Automation that supports delivery\nUI, API, and backend test coverage built to reduce regressions and support faster releases.",
+    "Pipeline-aware QA support\nAligned with CI/CD workflows and build validation, not just manual passes.",
+    "Live config and event validation\nQA extends into LiveOps and validates configs, events, and feature behavior in production.",
+    "F2P system awareness\nUnderstands economy balance, progression systems, and monetization impact. Tests beyond functionality.",
+    "Real-time collaboration with NA teams\nTimezone alignment supports faster iteration and less delay between dev and QA cycles.",
+    "Technical QA capability\nEngine familiarity and ability to read production code supports deeper issue identification and faster resolution.",
+    "Accountability-driven model\nQA operates with ownership and integration, not ticket-based execution.",
   ];
 
   const scopelyFit = [
@@ -586,11 +586,11 @@ export default function AspireMarionMiniPage() {
         </div>
       </section>
 
-      {/* WHY ASPIRE */}
+      {/* HOW THIS WORKS IN PRACTICE */}
       <section style={{ background: "#ffe44d", color: "#000000" }}>
         <div style={sectionWrap}>
-          <div style={{ maxWidth: "920px", marginBottom: "30px" }}>
-            <p style={{ ...sectionTitle, color: "#5f4700" }}>Why Aspire PODS</p>
+          <div style={{ maxWidth: "980px", marginBottom: "30px" }}>
+            <p style={{ ...sectionTitle, color: "#5f4700" }}>How this works in practice</p>
             <h2 style={sectionHeading}>
               Built to operate inside your development cycle
             </h2>
@@ -603,25 +603,43 @@ export default function AspireMarionMiniPage() {
               gridTemplateColumns: "repeat(auto-fit, minmax(190px, 1fr))",
             }}
           >
-            {differentiators.map((item, index) => (
-              <div
-                key={item}
-                style={{
-                  borderRadius: "24px",
-                  border: "2px solid rgba(0,0,0,0.12)",
-                  padding: "20px",
-                  fontSize: "13px",
-                  fontWeight: 900,
-                  textTransform: "uppercase",
-                  lineHeight: 1.6,
-                  letterSpacing: "0.06em",
-                  boxShadow: "0 0 24px rgba(0,0,0,0.08)",
-                  background: index % 2 === 0 ? "#fff06f" : "#fff6a0",
-                }}
-              >
-                {item}
-              </div>
-            ))}
+            {differentiators.map((item, index) => {
+              const [title, desc] = item.split("\n");
+              return (
+                <div
+                  key={title}
+                  style={{
+                    borderRadius: "24px",
+                    border: "2px solid rgba(0,0,0,0.12)",
+                    padding: "20px",
+                    boxShadow: "0 0 24px rgba(0,0,0,0.08)",
+                    background: index % 2 === 0 ? "#fff06f" : "#fff6a0",
+                  }}
+                >
+                  <div
+                    style={{
+                      fontSize: "13px",
+                      fontWeight: 900,
+                      textTransform: "uppercase",
+                      lineHeight: 1.55,
+                      letterSpacing: "0.06em",
+                      marginBottom: "10px",
+                    }}
+                  >
+                    {title}
+                  </div>
+                  <div
+                    style={{
+                      fontSize: "15px",
+                      lineHeight: 1.6,
+                      color: "rgba(0,0,0,0.82)",
+                    }}
+                  >
+                    {desc}
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
