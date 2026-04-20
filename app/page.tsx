@@ -777,56 +777,22 @@ export default function AspireMarionMiniPage() {
                   ...sectionTitle,
                   color: "#ffe44d",
                   marginBottom: "24px",
-                  fontSize: "18px",
-                  letterSpacing: "0.28em",
                 }}
               >
                 How we start
               </p>
 
               <div style={{ display: "grid", gap: "18px" }}>
-                <div
-                  style={{
-                    fontSize: "20px",
-                    lineHeight: 1.6,
-                    fontWeight: 700,
-                    letterSpacing: "-0.01em",
-                    color: "#ffffff",
-                  }}
-                >
+                <div style={{ fontSize: "20px", lineHeight: 1.6 }}>
                   1. Understand current structure, priorities, and QA goals
                 </div>
-                <div
-                  style={{
-                    fontSize: "20px",
-                    lineHeight: 1.6,
-                    fontWeight: 700,
-                    letterSpacing: "-0.01em",
-                    color: "#ffffff",
-                  }}
-                >
+                <div style={{ fontSize: "20px", lineHeight: 1.6 }}>
                   2. Design the right POD around studio needs
                 </div>
-                <div
-                  style={{
-                    fontSize: "20px",
-                    lineHeight: 1.6,
-                    fontWeight: 700,
-                    letterSpacing: "-0.01em",
-                    color: "#ffffff",
-                  }}
-                >
+                <div style={{ fontSize: "20px", lineHeight: 1.6 }}>
                   3. Integrate into workflow, tools, and communication lines
                 </div>
-                <div
-                  style={{
-                    fontSize: "20px",
-                    lineHeight: 1.6,
-                    fontWeight: 700,
-                    letterSpacing: "-0.01em",
-                    color: "#ffffff",
-                  }}
-                >
+                <div style={{ fontSize: "20px", lineHeight: 1.6 }}>
                   4. Launch, optimize, and scale over time
                 </div>
               </div>
@@ -856,7 +822,6 @@ export default function AspireMarionMiniPage() {
                     fontWeight: 900,
                     textTransform: "uppercase",
                     lineHeight: 1,
-                    maxWidth: "620px",
                   }}
                 >
                   Happy to discuss what this could look like for your team
@@ -867,8 +832,6 @@ export default function AspireMarionMiniPage() {
                     fontSize: "18px",
                     lineHeight: 1.7,
                     color: "rgba(255,255,255,0.85)",
-                    maxWidth: "620px",
-                    margin: 0,
                   }}
                 >
                   We can walk through current needs, explore the right North America
@@ -897,27 +860,26 @@ export default function AspireMarionMiniPage() {
 
                 <div
                   style={{
-                    width: "96px",
-                    height: "96px",
+                    width: "90px",
+                    height: "90px",
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
-                    flexShrink: 0,
                     filter:
-                      "drop-shadow(0 0 12px rgba(255,79,195,0.50)) drop-shadow(0 0 18px rgba(57,247,255,0.40))",
+                      "drop-shadow(0 0 12px rgba(255,79,195,0.5)) drop-shadow(0 0 18px rgba(57,247,255,0.4))",
                   }}
                 >
                   <svg
                     viewBox="0 0 120 120"
-                    width="84"
-                    height="84"
+                    width="80"
+                    height="80"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                     aria-label="Peace symbol"
                   >
                     <defs>
                       <linearGradient
-                        id="peaceGradientBottom"
+                        id="peaceGradient"
                         x1="0"
                         y1="0"
                         x2="120"
@@ -934,15 +896,15 @@ export default function AspireMarionMiniPage() {
                       cx="60"
                       cy="60"
                       r="48"
-                      stroke="url(#peaceGradientBottom)"
+                      stroke="url(#peaceGradient)"
                       strokeWidth="4"
                     />
                     <line
                       x1="60"
-                      y1="18"
+                      y1="20"
                       x2="60"
-                      y2="102"
-                      stroke="url(#peaceGradientBottom)"
+                      y2="100"
+                      stroke="url(#peaceGradient)"
                       strokeWidth="4"
                       strokeLinecap="round"
                     />
@@ -951,7 +913,7 @@ export default function AspireMarionMiniPage() {
                       y1="60"
                       x2="30"
                       y2="90"
-                      stroke="url(#peaceGradientBottom)"
+                      stroke="url(#peaceGradient)"
                       strokeWidth="4"
                       strokeLinecap="round"
                     />
@@ -960,7 +922,7 @@ export default function AspireMarionMiniPage() {
                       y1="60"
                       x2="90"
                       y2="90"
-                      stroke="url(#peaceGradientBottom)"
+                      stroke="url(#peaceGradient)"
                       strokeWidth="4"
                       strokeLinecap="round"
                     />
