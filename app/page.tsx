@@ -874,57 +874,62 @@ export default function AspireMarionMiniPage() {
                 >
                   <svg viewBox="0 0 120 120" width="84" height="84" fill="none">
                     <defs>
-                      <linearGradient id="peaceGradFinal" x1="0" y1="0" x2="120" y2="120">
+                      <linearGradient
+                        id="peaceGradFinalNEW"
+                        x1="0"
+                        y1="0"
+                        x2="120"
+                        y2="120"
+                      >
                         <stop offset="0%" stopColor="#ff5dc0" />
                         <stop offset="50%" stopColor="#ffd86a" />
                         <stop offset="100%" stopColor="#55f6ff" />
                       </linearGradient>
                     </defs>
 
+                    {/* outer circle */}
                     <circle
                       cx="60"
                       cy="60"
                       r="46"
-                      stroke="url(#peaceGradFinal)"
+                      stroke="url(#peaceGradFinalNEW)"
                       strokeWidth="4"
                     />
 
+                    {/* full center line */}
                     <line
                       x1="60"
-                      y1="22"
+                      y1="16"
                       x2="60"
-                      y2="98"
-                      stroke="url(#peaceGradFinal)"
+                      y2="104"
+                      stroke="url(#peaceGradFinalNEW)"
                       strokeWidth="4"
                       strokeLinecap="round"
                     />
 
+                    {/* left lower branch */}
                     <line
                       x1="60"
                       y1="60"
-                      x2="32"
-                      y2="90"
-                      stroke="url(#peaceGradFinal)"
+                      x2="28"
+                      y2="92"
+                      stroke="url(#peaceGradFinalNEW)"
                       strokeWidth="4"
                       strokeLinecap="round"
                     />
 
+                    {/* right lower branch */}
                     <line
                       x1="60"
                       y1="60"
-                      x2="88"
-                      y2="90"
-                      stroke="url(#peaceGradFinal)"
+                      x2="92"
+                      y2="92"
+                      stroke="url(#peaceGradFinalNEW)"
                       strokeWidth="4"
                       strokeLinecap="round"
                     />
                   </svg>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+                </div>      </section>
     </main>
   );
 }
