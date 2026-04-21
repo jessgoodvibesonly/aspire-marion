@@ -731,7 +731,6 @@ export default function AspireMarionMiniPage() {
           </div>
         </div>
       </section>
-
 {/* FINAL SECTION */}
 <section
   style={{
@@ -856,7 +855,6 @@ export default function AspireMarionMiniPage() {
             Schedule time with Jess
           </a>
 
-          {/* ✅ SAFE GLOWING PEACE SYMBOL */}
           <div
             style={{
               width: "90px",
@@ -871,7 +869,7 @@ export default function AspireMarionMiniPage() {
             <svg viewBox="0 0 120 120" width="80" height="80">
               <defs>
                 <linearGradient
-                  id="peaceGradientUnique"   {/* 🔥 FIXED ID */}
+                  id="peaceGradientUnique"
                   x1="0"
                   y1="0"
                   x2="120"
