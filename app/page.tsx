@@ -858,12 +858,11 @@ export default function AspireMarionMiniPage() {
                 >
                   SCHEDULE TIME WITH JESS
                 </a>
-</a>
-</div> {/* end button row */}
+</div>
 
-</div> {/* end right panel inner */}
-</div> {/* end right panel */}
-</div> {/* end main grid */}
+</div>
+</div>
+</div>
 </section>
 </main>
 );
