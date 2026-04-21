@@ -859,13 +859,66 @@ export default function AspireMarionMiniPage() {
                   SCHEDULE TIME WITH JESS
                 </a>
 
-{/* spacer (removed peace symbol for stability) */}
-<div style={{ width: "96px", height: "96px" }} />
-</div> {/* end button + spacer row */}
-</div> {/* end right panel inner */}
-</div> {/* end right panel */}
-</div> {/* end main grid */}
-</section>
-</main>
-);
-}                
+{/* PEACE SYMBOL (safe version) */}
+<div
+  style={{
+    width: "96px",
+    height: "96px",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    flexShrink: 0,
+  }}
+>
+  <div
+    style={{
+      width: "72px",
+      height: "72px",
+      borderRadius: "50%",
+      border: "3px solid #ff4fc3",
+      position: "relative",
+      boxShadow: "0 0 18px rgba(255,79,195,0.6)",
+    }}
+  >
+    {/* vertical */}
+    <div
+      style={{
+        position: "absolute",
+        left: "50%",
+        top: "10%",
+        bottom: "10%",
+        width: "2px",
+        background: "#ff4fc3",
+        transform: "translateX(-50%)",
+      }}
+    />
+
+    {/* left branch */}
+    <div
+      style={{
+        position: "absolute",
+        width: "2px",
+        height: "40%",
+        background: "#ff4fc3",
+        bottom: "10%",
+        left: "50%",
+        transform: "translateX(-50%) rotate(-45deg)",
+        transformOrigin: "bottom center",
+      }}
+    />
+
+    {/* right branch */}
+    <div
+      style={{
+        position: "absolute",
+        width: "2px",
+        height: "40%",
+        background: "#ff4fc3",
+        bottom: "10%",
+        left: "50%",
+        transform: "translateX(-50%) rotate(45deg)",
+        transformOrigin: "bottom center",
+      }}
+    />
+  </div>
+</div>
