@@ -732,195 +732,196 @@ export default function AspireMarionMiniPage() {
         </div>
       </section>
 
-      {/* FINAL SECTION */}
-      <section
+{/* FINAL SECTION */}
+<section
+  style={{
+    background:
+      "linear-gradient(90deg, #031024 0%, #041226 34%, #061628 68%, #051224 100%)",
+    color: "#ffffff",
+    position: "relative",
+    overflow: "hidden",
+  }}
+>
+  <div
+    style={{
+      position: "absolute",
+      inset: 0,
+      background:
+        "radial-gradient(circle at 12% 50%, rgba(255,62,165,0.10), transparent 26%), radial-gradient(circle at 88% 52%, rgba(31,245,255,0.12), transparent 26%)",
+      pointerEvents: "none",
+    }}
+  />
+  <div style={{ ...sectionWrap, position: "relative" }}>
+    <div
+      style={{
+        display: "grid",
+        gap: "34px",
+        gridTemplateColumns: "1fr 1fr",
+      }}
+    >
+      {/* LEFT CARD */}
+      <div
         style={{
+          borderRadius: "32px",
+          border: "2px solid rgba(255,62,165,0.68)",
           background:
-            "linear-gradient(90deg, #031024 0%, #041226 34%, #061628 68%, #051224 100%)",
-          color: "#ffffff",
-          position: "relative",
-          overflow: "hidden",
+            "linear-gradient(180deg, rgba(34,0,22,0.96) 0%, rgba(22,0,14,0.98) 100%)",
+          padding: "38px",
+          boxShadow: "0 0 44px rgba(255,62,165,0.18)",
         }}
       >
-        <div
+        <p
           style={{
-            position: "absolute",
-            inset: 0,
-            background:
-              "radial-gradient(circle at 12% 50%, rgba(255,62,165,0.10), transparent 26%), radial-gradient(circle at 88% 52%, rgba(31,245,255,0.12), transparent 26%)",
-            pointerEvents: "none",
+            ...sectionTitle,
+            color: "#ffe44d",
+            marginBottom: "24px",
           }}
-        />
-        <div style={{ ...sectionWrap, position: "relative" }}>
-          <div
-            style={{
-              display: "grid",
-              gap: "34px",
-              gridTemplateColumns: "1fr 1fr",
-            }}
-          >
-            {/* LEFT CARD */}
-            <div
-              style={{
-                borderRadius: "32px",
-                border: "2px solid rgba(255,62,165,0.68)",
-                background:
-                  "linear-gradient(180deg, rgba(34,0,22,0.96) 0%, rgba(22,0,14,0.98) 100%)",
-                padding: "38px",
-                boxShadow: "0 0 44px rgba(255,62,165,0.18)",
-              }}
-            >
-              <p
-                style={{
-                  ...sectionTitle,
-                  color: "#ffe44d",
-                  marginBottom: "24px",
-                }}
-              >
-                How we start
-              </p>
+        >
+          How we start
+        </p>
 
-              <div style={{ display: "grid", gap: "18px" }}>
-                <div style={{ fontSize: "20px", lineHeight: 1.6 }}>
-                  1. Understand current structure, priorities, and QA goals
-                </div>
-                <div style={{ fontSize: "20px", lineHeight: 1.6 }}>
-                  2. Design the right POD around studio needs
-                </div>
-                <div style={{ fontSize: "20px", lineHeight: 1.6 }}>
-                  3. Integrate into workflow, tools, and communication lines
-                </div>
-                <div style={{ fontSize: "20px", lineHeight: 1.6 }}>
-                  4. Launch, optimize, and scale over time
-                </div>
-              </div>
-            </div>
-
-            {/* RIGHT CARD */}
-            <div
-              style={{
-                borderRadius: "32px",
-                border: "2px solid rgba(31,245,255,0.72)",
-                background:
-                  "linear-gradient(180deg, rgba(1,35,34,0.96) 0%, rgba(1,20,21,0.98) 100%)",
-                padding: "42px",
-                boxShadow: "0 0 46px rgba(31,245,255,0.16)",
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "space-between",
-              }}
-            >
-              <div>
-                <p style={{ ...sectionTitle, color: "#1ff5ff" }}>Next step</p>
-
-                <h3
-                  style={{
-                    margin: "14px 0 22px",
-                    fontSize: "40px",
-                    fontWeight: 900,
-                    textTransform: "uppercase",
-                    lineHeight: 1,
-                  }}
-                >
-                  Happy to discuss what this could look like for your team
-                </h3>
-
-                <p
-                  style={{
-                    fontSize: "18px",
-                    lineHeight: 1.7,
-                    color: "rgba(255,255,255,0.85)",
-                  }}
-                >
-                  We can walk through current needs, explore the right North America
-                  support structure, and outline how Aspire PODS could operate as a
-                  long term partner.
-                </p>
-              </div>
-
-              <div
-                style={{
-                  marginTop: "28px",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "space-between",
-                  gap: "20px",
-                }}
-              >
-                <a
-                  href="https://us06web.zoom.us/j/83714913737?pwd=Z6O3McqxGtbAf25pYav3mnRb50JyMi.1"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={primaryCtaStyle}
-                >
-                  Schedule time with Jess
-                </a>
-
-                <div
-                  style={{
-                    width: "90px",
-                    height: "90px",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    filter:
-                      "drop-shadow(0 0 12px rgba(255,79,195,0.5)) drop-shadow(0 0 18px rgba(57,247,255,0.4))",
-                  }}
-                >
-                  <svg viewBox="0 0 120 120" width="80" height="80">
-                    <defs>
-                      <linearGradient
-                        id="peaceGradient"
-                        x1="0"
-                        y1="0"
-                        x2="120"
-                        y2="120"
-                      >
-                        <stop stopColor="#ff5dc0" />
-                        <stop offset="0.5" stopColor="#ffd86a" />
-                        <stop offset="1" stopColor="#55f6ff" />
-                      </linearGradient>
-                    </defs>
-
-                    <circle
-                      cx="60"
-                      cy="60"
-                      r="48"
-                      stroke="url(#peaceGradient)"
-                      strokeWidth="4"
-                      fill="none"
-                    />
-                    <line
-                      x1="60"
-                      y1="20"
-                      x2="60"
-                      y2="100"
-                      stroke="url(#peaceGradient)"
-                      strokeWidth="4"
-                    />
-                    <line
-                      x1="60"
-                      y1="60"
-                      x2="30"
-                      y2="90"
-                      stroke="url(#peaceGradient)"
-                      strokeWidth="4"
-                    />
-                    <line
-                      x1="60"
-                      y1="60"
-                      x2="90"
-                      y2="90"
-                      stroke="url(#peaceGradient)"
-                      strokeWidth="4"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </div>
+        <div style={{ display: "grid", gap: "18px" }}>
+          <div style={{ fontSize: "20px", lineHeight: 1.6 }}>
+            1. Understand current structure, priorities, and QA goals
+          </div>
+          <div style={{ fontSize: "20px", lineHeight: 1.6 }}>
+            2. Design the right POD around studio needs
+          </div>
+          <div style={{ fontSize: "20px", lineHeight: 1.6 }}>
+            3. Integrate into workflow, tools, and communication lines
+          </div>
+          <div style={{ fontSize: "20px", lineHeight: 1.6 }}>
+            4. Launch, optimize, and scale over time
           </div>
         </div>
-      </section>
-    </main>
-  );
-}
+      </div>
+
+      {/* RIGHT CARD */}
+      <div
+        style={{
+          borderRadius: "32px",
+          border: "2px solid rgba(31,245,255,0.72)",
+          background:
+            "linear-gradient(180deg, rgba(1,35,34,0.96) 0%, rgba(1,20,21,0.98) 100%)",
+          padding: "42px",
+          boxShadow: "0 0 46px rgba(31,245,255,0.16)",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "space-between",
+        }}
+      >
+        <div>
+          <p style={{ ...sectionTitle, color: "#1ff5ff" }}>Next step</p>
+
+          <h3
+            style={{
+              margin: "14px 0 22px",
+              fontSize: "40px",
+              fontWeight: 900,
+              textTransform: "uppercase",
+              lineHeight: 1,
+            }}
+          >
+            Happy to discuss what this could look like for your team
+          </h3>
+
+          <p
+            style={{
+              fontSize: "18px",
+              lineHeight: 1.7,
+              color: "rgba(255,255,255,0.85)",
+            }}
+          >
+            We can walk through current needs, explore the right North America
+            support structure, and outline how Aspire PODS could operate as a
+            long term partner.
+          </p>
+        </div>
+
+        <div
+          style={{
+            marginTop: "28px",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
+            gap: "20px",
+          }}
+        >
+          <a
+            href="https://us06web.zoom.us/j/83714913737?pwd=Z6O3McqxGtbAf25pYav3mnRb50JyMi.1"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={primaryCtaStyle}
+          >
+            Schedule time with Jess
+          </a>
+
+          {/* ✅ SAFE GLOWING PEACE SYMBOL */}
+          <div
+            style={{
+              width: "90px",
+              height: "90px",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              filter:
+                "drop-shadow(0 0 12px rgba(255,79,195,0.5)) drop-shadow(0 0 18px rgba(57,247,255,0.4))",
+            }}
+          >
+            <svg viewBox="0 0 120 120" width="80" height="80">
+              <defs>
+                <linearGradient
+                  id="peaceGradientUnique"   {/* 🔥 FIXED ID */}
+                  x1="0"
+                  y1="0"
+                  x2="120"
+                  y2="120"
+                >
+                  <stop stopColor="#ff5dc0" />
+                  <stop offset="0.5" stopColor="#ffd86a" />
+                  <stop offset="1" stopColor="#55f6ff" />
+                </linearGradient>
+              </defs>
+
+              <circle
+                cx="60"
+                cy="60"
+                r="48"
+                stroke="url(#peaceGradientUnique)"
+                strokeWidth="4"
+                fill="none"
+              />
+              <line
+                x1="60"
+                y1="20"
+                x2="60"
+                y2="100"
+                stroke="url(#peaceGradientUnique)"
+                strokeWidth="4"
+                strokeLinecap="round"
+              />
+              <line
+                x1="60"
+                y1="60"
+                x2="30"
+                y2="90"
+                stroke="url(#peaceGradientUnique)"
+                strokeWidth="4"
+                strokeLinecap="round"
+              />
+              <line
+                x1="60"
+                y1="60"
+                x2="90"
+                y2="90"
+                stroke="url(#peaceGradientUnique)"
+                strokeWidth="4"
+                strokeLinecap="round"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
