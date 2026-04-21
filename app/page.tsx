@@ -859,68 +859,67 @@ export default function AspireMarionMiniPage() {
             SCHEDULE TIME WITH JESS
           </a>
 
-          {/* PEACE SYMBOL */}
-          <div
-            style={{
-              width: "96px",
-              height: "96px",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              flexShrink: 0,
-              filter:
-                "drop-shadow(0 0 14px rgba(255,79,195,0.6)) drop-shadow(0 0 22px rgba(57,247,255,0.5))",
-            }}
-          >
-            <svg viewBox="0 0 120 120" width="84" height="84">
-              <defs>
-                <linearGradient id="peaceGradFinal" x1="0" y1="0" x2="120" y2="120">
-                  <stop offset="0%" stopColor="#ff5dc0" />
-                  <stop offset="50%" stopColor="#ffd86a" />
-                  <stop offset="100%" stopColor="#55f6ff" />
-                </linearGradient>
-              </defs>
+         {/* PEACE SYMBOL */}
+<div
+  style={{
+    width: "96px",
+    height: "96px",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    flexShrink: 0,
+    filter:
+      "drop-shadow(0 0 14px rgba(255,79,195,0.6)) drop-shadow(0 0 22px rgba(57,247,255,0.5))",
+  }}
+>
+  <svg viewBox="0 0 120 120" width="84" height="84" fill="none">
+    <defs>
+      <linearGradient id="peaceGradFinal" x1="0" y1="0" x2="120" y2="120">
+        <stop offset="0%" stopColor="#ff5dc0" />
+        <stop offset="50%" stopColor="#ffd86a" />
+        <stop offset="100%" stopColor="#55f6ff" />
+      </linearGradient>
+    </defs>
 
-              <circle
-                cx="60"
-                cy="60"
-                r="46"
-                stroke="url(#peaceGradFinal)"
-                strokeWidth="4"
-                fill="none"
-              />
+    <circle
+      cx="60"
+      cy="60"
+      r="46"
+      stroke="url(#peaceGradFinal)"
+      strokeWidth="4"
+    />
 
-              <line
-                x1="60"
-                y1="22"
-                x2="60"
-                y2="98"
-                stroke="url(#peaceGradFinal)"
-                strokeWidth="4"
-                strokeLinecap="round"
-              />
+    <line
+      x1="60"
+      y1="22"
+      x2="60"
+      y2="98"
+      stroke="url(#peaceGradFinal)"
+      strokeWidth="4"
+      strokeLinecap="round"
+    />
 
-              <line
-                x1="60"
-                y1="60"
-                x2="32"
-                y2="90"
-                stroke="url(#peaceGradFinal)"
-                strokeWidth="4"
-                strokeLinecap="round"
-              />
+    <line
+      x1="60"
+      y1="60"
+      x2="32"
+      y2="90"
+      stroke="url(#peaceGradFinal)"
+      strokeWidth="4"
+      strokeLinecap="round"
+    />
 
-              <line
-                x1="60"
-                y1="60"
-                x2="88"
-                y2="90"
-                stroke="url(#peaceGradFinal)"
-                strokeWidth="4"
-                strokeLinecap="round"
-              />
-            </svg>
-          </div>
+    <line
+      x1="60"
+      y1="60"
+      x2="88"
+      y2="90"
+      stroke="url(#peaceGradFinal)"
+      strokeWidth="4"
+      strokeLinecap="round"
+    />
+  </svg>
+</div>
 
         </div>
       </div>
