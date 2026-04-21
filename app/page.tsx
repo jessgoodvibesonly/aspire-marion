@@ -859,7 +859,7 @@ export default function AspireMarionMiniPage() {
                   SCHEDULE TIME WITH JESS
                 </a>
 
-{/* PEACE SYMBOL (safe version) */}
+{/* PEACE SYMBOL */}
 <div
   style={{
     width: "96px",
@@ -870,55 +870,49 @@ export default function AspireMarionMiniPage() {
     flexShrink: 0,
   }}
 >
-  <div
+  <svg
+    viewBox="0 0 120 120"
+    width="76"
+    height="76"
+    fill="none"
     style={{
-      width: "72px",
-      height: "72px",
-      borderRadius: "50%",
-      border: "3px solid #ff4fc3",
-      position: "relative",
-      boxShadow: "0 0 18px rgba(255,79,195,0.6)",
+      overflow: "visible",
+      filter: "drop-shadow(0 0 12px rgba(255,79,195,0.6))",
     }}
   >
-    {/* vertical */}
-    <div
-      style={{
-        position: "absolute",
-        left: "50%",
-        top: "10%",
-        bottom: "10%",
-        width: "2px",
-        background: "#ff4fc3",
-        transform: "translateX(-50%)",
-      }}
+    <circle
+      cx="60"
+      cy="60"
+      r="42"
+      stroke="#ff4fc3"
+      strokeWidth="5"
     />
-
-    {/* left branch */}
-    <div
-      style={{
-        position: "absolute",
-        width: "2px",
-        height: "40%",
-        background: "#ff4fc3",
-        bottom: "10%",
-        left: "50%",
-        transform: "translateX(-50%) rotate(-45deg)",
-        transformOrigin: "bottom center",
-      }}
+    <line
+      x1="60"
+      y1="18"
+      x2="60"
+      y2="98"
+      stroke="#ff4fc3"
+      strokeWidth="5"
+      strokeLinecap="round"
     />
-
-    {/* right branch */}
-    <div
-      style={{
-        position: "absolute",
-        width: "2px",
-        height: "40%",
-        background: "#ff4fc3",
-        bottom: "10%",
-        left: "50%",
-        transform: "translateX(-50%) rotate(45deg)",
-        transformOrigin: "bottom center",
-      }}
+    <line
+      x1="60"
+      y1="60"
+      x2="30"
+      y2="90"
+      stroke="#ff4fc3"
+      strokeWidth="5"
+      strokeLinecap="round"
     />
-  </div>
+    <line
+      x1="60"
+      y1="60"
+      x2="90"
+      y2="90"
+      stroke="#ff4fc3"
+      strokeWidth="5"
+      strokeLinecap="round"
+    />
+  </svg>
 </div>
