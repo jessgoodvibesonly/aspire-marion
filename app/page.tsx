@@ -860,7 +860,7 @@ export default function AspireMarionMiniPage() {
                 </a>
 
                 {/* PEACE SYMBOL */}
-                <div
+                <div>
                   style={{
                     width: "96px",
                     height: "96px",
@@ -887,7 +887,6 @@ export default function AspireMarionMiniPage() {
                       </linearGradient>
                     </defs>
 
-                    {/* outer circle */}
                     <circle
                       cx="60"
                       cy="60"
@@ -896,7 +895,6 @@ export default function AspireMarionMiniPage() {
                       strokeWidth="4"
                     />
 
-                    {/* full center line */}
                     <line
                       x1="60"
                       y1="16"
@@ -907,7 +905,6 @@ export default function AspireMarionMiniPage() {
                       strokeLinecap="round"
                     />
 
-                    {/* left lower branch */}
                     <line
                       x1="60"
                       y1="60"
@@ -918,7 +915,6 @@ export default function AspireMarionMiniPage() {
                       strokeLinecap="round"
                     />
 
-                    {/* right lower branch */}
                     <line
                       x1="60"
                       y1="60"
@@ -929,7 +925,12 @@ export default function AspireMarionMiniPage() {
                       strokeLinecap="round"
                     />
                   </svg>
-                </div>      </section>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
